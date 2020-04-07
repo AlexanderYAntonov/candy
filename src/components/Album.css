@@ -1,0 +1,17 @@
+.heroButtons > .mainButton {
+  background-color: #143109;
+  color: white;
+}
+
+.heroButtons > .mainButton:hover {
+  background-color: #5d9e0e;
+}
+
+.heroButtons {
+  margin: 0;
+  position: absolute;
+  right: 2rem;
+  top: 2rem;
+  display: flex;
+  justify-content: flex-end;
+}
