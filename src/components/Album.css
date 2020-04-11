@@ -1,6 +1,17 @@
 .heroButtons > .mainButton {
-  background-color: #143109;
-  color: white;
+  display: none;
+}
+
+@media screen and (min-device-width: 600px) {
+  #appbar {
+    display: none;
+  }
+
+  .heroButtons > .mainButton {
+    background-color: #143109;
+    color: white;
+    display: block;
+  }
 }
 
 .heroButtons > .mainButton:hover {
@@ -22,8 +33,9 @@
 
 .heroContent {
   background-image: url("http://localhost:3000/assets/images/hero-image-cut.jpg");
+  background-size: cover;
   padding: 8px 0px 6px;
-  height: 50vh;
+  height: 30vh;
   position: relative;
 }
 
@@ -47,4 +59,8 @@
 }
 .toolbar {
   background-color: #143109;
+}
+
+.icon {
+  margin-right: 0.5em;
 }

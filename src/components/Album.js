@@ -1,14 +1,14 @@
 import React from 'react';
-// import AppBar from '@material-ui/core/AppBar';
+import AppBar from '@material-ui/core/AppBar';
 import Button from '@material-ui/core/Button';
-// import MenuIcon from '@material-ui/icons/Menu';
+import WhatsappIcon from '@material-ui/icons/WhatsApp';
 import Card from '@material-ui/core/Card';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 // import CssBaseline from '@material-ui/core/CssBaseline';
 import Grid from '@material-ui/core/Grid';
-// import Toolbar from '@material-ui/core/Toolbar';
+import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import Container from '@material-ui/core/Container';
 import Link from '@material-ui/core/Link';
@@ -33,7 +33,7 @@ class Album extends React.Component {
     const { list } = this.props;
     const prefix = 'http://localhost:3000/assets/images/';
     return list.map((card) => (
-      <Grid item key={card.id} xs={12} sm={6} md={4}>
+      <Grid item key={card.id} xs={12} sm={12} md={6} lg={4}>
         <Card className={'card'}>
           <CardMedia
             className={'cardMedia'}
@@ -63,16 +63,16 @@ class Album extends React.Component {
     return (
       <React.Fragment>
         {/* <CssBaseline /> */}
-        {/*
-      <AppBar position="relative">
-        <Toolbar className={classes.toolbar}>
-          <MenuIcon className={classes.icon} />
-          <Typography variant="h6" color="inherit" noWrap>
-            Домашняя кондитерская
-          </Typography>
-        </Toolbar>
-      </AppBar>
-      */}
+
+        <AppBar position="fixed" id={'appbar'}>
+          <Toolbar className={'toolbar'}>
+            <WhatsappIcon className={'icon'} />
+            <Typography variant="h6" color="inherit" noWrap>
+              8-913-123-45-67
+            </Typography>
+          </Toolbar>
+        </AppBar>
+
         <main>
           {/* Hero unit */}
           <div className={'heroContent'}>
