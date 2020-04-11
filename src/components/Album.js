@@ -33,7 +33,7 @@ class Album extends React.Component {
     const { list } = this.props;
     const prefix = 'http://localhost:3000/assets/images/';
     return list.map((card) => (
-      <Grid item key={card.id} xs={12} sm={12} md={6} lg={4}>
+      <Grid item key={card.id} xs={12} sm={12} md={6} xl={4}>
         <Card className={'card'}>
           <CardMedia
             className={'cardMedia'}

@@ -2,6 +2,14 @@
   display: none;
 }
 
+.heroContent {
+  background-image: url("http://localhost:3000/assets/images/hero-image-cut.jpg");
+  background-size: cover;
+  padding: 8px 0px 6px;
+  height: 25vh;
+  position: relative;
+}
+
 @media screen and (min-device-width: 600px) {
   #appbar {
     display: none;
@@ -11,6 +19,10 @@
     background-color: #143109;
     color: white;
     display: block;
+  }
+
+  .heroContent {
+    height: 30vh;
   }
 }
 
@@ -29,14 +41,6 @@
 
 .cardButton {
   color: #fa198b;
-}
-
-.heroContent {
-  background-image: url("http://localhost:3000/assets/images/hero-image-cut.jpg");
-  background-size: cover;
-  padding: 8px 0px 6px;
-  height: 30vh;
-  position: relative;
 }
 
 .cardGrid {
