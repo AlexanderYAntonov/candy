@@ -2,7 +2,8 @@
   "name": "candy",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://alexanderyantonov.github.io/candy",
+  "homepage": "https://alexanderyantonov.github.io/candy/",
+  "proxy": "http://localhost:3000/candy/",
   "dependencies": {
     "@material-ui/core": "^4.9.9",
     "@material-ui/icons": "^4.9.1",

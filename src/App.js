@@ -11,10 +11,16 @@ class App extends React.Component {
   componentDidMount() {
     const url = 'http://localhost:3000/assets/json/cakesList.json';
     this.setState({ isLoading: true });
-    fetch(url).then((response) => response.json()).then((data) => {
-      console.log(data);
-      this.setState({ isLoading: false, list: data });
-    });
+    fetch(url)
+      .then((response) => response.json())
+      .then((data) => {
+        console.log(data);
+        this.setState({ isLoading: false, list: data });
+      })
+      .catch((error) => {
+        console.error(error);
+        this.setState({ isLoading: false, list: [] });
+      });
   }
 
   render() {
