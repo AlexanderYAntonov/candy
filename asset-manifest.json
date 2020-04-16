@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/candy/static/css/main.f92fb602.chunk.css",
-    "main.js": "/candy/static/js/main.02ce6db2.chunk.js",
-    "main.js.map": "/candy/static/js/main.02ce6db2.chunk.js.map",
+    "main.js": "/candy/static/js/main.063fe220.chunk.js",
+    "main.js.map": "/candy/static/js/main.063fe220.chunk.js.map",
     "runtime-main.js": "/candy/static/js/runtime-main.17a575d8.js",
     "runtime-main.js.map": "/candy/static/js/runtime-main.17a575d8.js.map",
     "static/js/2.bc59b307.chunk.js": "/candy/static/js/2.bc59b307.chunk.js",
     "static/js/2.bc59b307.chunk.js.map": "/candy/static/js/2.bc59b307.chunk.js.map",
     "index.html": "/candy/index.html",
-    "precache-manifest.6f8fd9277b01872ab6150c94349a1b56.js": "/candy/precache-manifest.6f8fd9277b01872ab6150c94349a1b56.js",
+    "precache-manifest.467f7ea596eeff495f67c9791a6b773a.js": "/candy/precache-manifest.467f7ea596eeff495f67c9791a6b773a.js",
     "service-worker.js": "/candy/service-worker.js",
     "static/css/main.f92fb602.chunk.css.map": "/candy/static/css/main.f92fb602.chunk.css.map",
     "static/js/2.bc59b307.chunk.js.LICENSE.txt": "/candy/static/js/2.bc59b307.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.17a575d8.js",
     "static/js/2.bc59b307.chunk.js",
     "static/css/main.f92fb602.chunk.css",
-    "static/js/main.02ce6db2.chunk.js"
+    "static/js/main.063fe220.chunk.js"
   ]
 }
