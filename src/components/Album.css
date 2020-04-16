@@ -3,7 +3,7 @@
 }
 
 .heroContent {
-  background-image: url("/assets/images/hero-image-cut.jpg");
+  background-image: url("/candy/assets/images/hero-image-cut.jpg");
   background-size: cover;
   padding: 8px 0px 6px;
   height: 25vh;

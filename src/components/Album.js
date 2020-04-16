@@ -31,7 +31,7 @@ function Copyright() {
 class Album extends React.Component {
   buildTemplate = () => {
     const { list } = this.props;
-    const prefix = '/assets/images/';
+    const prefix = '/candy/assets/images/';
     return list.map((card) => (
       <Grid
         item

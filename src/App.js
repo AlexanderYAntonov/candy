@@ -9,7 +9,7 @@ class App extends React.Component {
   };
 
   componentDidMount() {
-    const url = '/assets/json/cakesList.json';
+    const url = '/candy/assets/json/cakesList.json';
     this.setState({ isLoading: true });
     fetch(url)
       .then((response) => response.json())
