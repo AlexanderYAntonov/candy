@@ -39,30 +39,68 @@
   justify-content: flex-end;
 }
 
-.cardButton {
+.card .cardButton {
   color: #fa198b;
+  padding: 0.5em;
+  border-radius: 5px;
 }
 
 .cardGrid {
-  padding: 0.5em 0;
+  padding: 1.5em 0;
 }
 
-.card {
+.albumGrid .card {
   height: 100%;
   display: flex;
   flex-direction: column;
+  box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.3),
+    2px 2px 4px rgba(255, 255, 255, 0.3);
+  transition: transform 0.3s ease-out;
 }
+
+.albumGrid .card:hover {
+  transform: translate(-1px, -2px);
+  box-shadow: 5px 7px 4px rgba(0, 0, 0, 0.3);
+}
+
 .cardMedia {
   padding-top: 56.25%; /* 16:9*/
+  padding-top: 80%; /* 16:9*/
 }
-.cardContent {
+.card .cardContent {
   flex-grow: 1;
+  padding: 1em 1em 0 1em;
 }
+
+.card .cardTitle {
+  text-align: left;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.card .cardText {
+  text-align: left;
+  color: rgba(0, 0, 0, 0.54);
+  font-size: 0.83rem;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.cardActions {
+  justify-content: space-between;
+}
+
 .footer {
   padding: 6px;
 }
 .toolbar {
   background-color: #143109;
+}
+
+.footer {
+  background-color: #143109;
+  background-color: #5d9e0e;
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .icon {

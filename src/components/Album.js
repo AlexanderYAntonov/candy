@@ -17,11 +17,11 @@ import './Album.css';
 
 function Copyright() {
   return (
-    <Typography variant="body2" color="textSecondary" align="center">
-      {'Copyright © '}
-      <Link color="inherit" href="https://material-ui.com/">
-        Your Website
-      </Link>{' '}
+    <Typography variant="body2" align="center">
+      {'© Домашний кондитер '}
+      {/* <Link color="inherit" href="https://material-ui.com/">
+        
+      </Link>{' '} */}
       {new Date().getFullYear()}
       {'.'}
     </Typography>
@@ -33,7 +33,15 @@ class Album extends React.Component {
     const { list } = this.props;
     const prefix = '/assets/images/';
     return list.map((card) => (
-      <Grid item key={card.id} xs={12} sm={12} md={6} xl={4}>
+      <Grid
+        item
+        key={card.id}
+        xs={12}
+        sm={12}
+        md={6}
+        xl={4}
+        className={'albumGrid'}
+      >
         <Card className={'card'}>
           <CardMedia
             className={'cardMedia'}
@@ -41,12 +49,19 @@ class Album extends React.Component {
             title={card.title}
           />
           <CardContent className={'cardContent'}>
-            <Typography gutterBottom variant="h5" component="h2">
+            <Typography
+              gutterBottom
+              variant="h6"
+              component="h3"
+              className={'cardTitle'}
+            >
               {card.title}
             </Typography>
-            <Typography>{card.shortDescription}</Typography>
+            <Typography className={'cardText'}>
+              {card.shortDescription}
+            </Typography>
           </CardContent>
-          <CardActions>
+          <CardActions className={'cardActions'}>
             <Button size="small" className={'cardButton'}>
               Подробнее
             </Button>
@@ -91,16 +106,11 @@ class Album extends React.Component {
         </main>
         {/* Footer */}
         <footer className={'footer'}>
-          <Typography variant="h6" align="center" gutterBottom>
+          {/* <Typography variant="h6" align="center" gutterBottom>
             Footer
-          </Typography>
-          <Typography
-            variant="subtitle1"
-            align="center"
-            color="textSecondary"
-            component="p"
-          >
-            Something here to give the footer a purpose!
+          </Typography> */}
+          <Typography variant="subtitle1" align="center" component="p">
+            Заказ по телефону - 8-913-123-45-56
           </Typography>
           <Copyright />
         </footer>
