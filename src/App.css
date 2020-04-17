@@ -10,4 +10,16 @@ body a {
 
 .App {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.switch {
+  flex: 1;
+}
+
+.footerText {
+  display: flex;
+  justify-content: center;
 }

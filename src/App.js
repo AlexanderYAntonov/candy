@@ -57,20 +57,23 @@ class App extends React.Component {
           </Toolbar>
         </AppBar>
 
-        <Switch>
-          <Route exact path="/" render={() => <Album list={list} />} />
-          <Route path="/details/:id" component={Details} />
-          <Route path="/order" component={Order} />
-          <Route component={NotFound} />
-          {/* <Album list={list} /> */}
-        </Switch>
+        <div className={'switch'}>
+          <Switch>
+            <Route exact path="/" render={() => <Album list={list} />} />
+            <Route path="/details/:id" component={Details} />
+            <Route path="/order" component={Order} />
+            <Route component={NotFound} />
+          </Switch>
+        </div>
 
         <footer className={'footer'}>
-          {/* <Typography variant="h6" align="center" gutterBottom>
-            Footer
-          </Typography> */}
-          <Typography variant="subtitle1" align="center" component="p">
-            Заказ по телефону - 8-913-123-45-56
+          <Typography
+            variant="subtitle1"
+            align="center"
+            component="p"
+            className={'footerText'}
+          >
+            <WhatsappIcon className={'icon'} /> 8-913-123-45-56
           </Typography>
           <Copyright />
         </footer>
