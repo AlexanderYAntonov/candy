@@ -35,7 +35,6 @@ class App extends React.Component {
     fetch(url)
       .then((response) => response.json())
       .then((data) => {
-        console.log(data);
         this.setState({ isLoading: false, list: data });
       })
       .catch((error) => {
@@ -43,6 +42,14 @@ class App extends React.Component {
         this.setState({ isLoading: false, list: [] });
       });
   }
+
+  DetailsWrapper = (props) => {
+    const { id } = props.match.params;
+    const { list } = this.state;
+    const data = list.filter((item) => item.id === id);
+
+    return <Details data={data[0]} key={id} />;
+  };
 
   render() {
     const { list } = this.state;
@@ -60,7 +67,11 @@ class App extends React.Component {
         <div className={'switch'}>
           <Switch>
             <Route exact path="/" render={() => <Album list={list} />} />
-            <Route path="/details/:id" component={Details} />
+            {/* <Route
+              path="/details/:id"
+              render={(props) => <Details {...props} list={list} />}
+            /> */}
+            <Route path="/details/:id" component={this.DetailsWrapper} />
             <Route path="/order" component={Order} />
             <Route component={NotFound} />
           </Switch>

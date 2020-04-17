@@ -1,0 +1,23 @@
+.details__container {
+  display: flex;
+  justify-content: center;
+}
+
+.details__card {
+  display: flex;
+  width: 90%;
+  min-width: 360px;
+  min-height: 50vh;
+}
+
+.details__image {
+  width: 400px;
+}
+
+.details__content {
+  text-align: left;
+}
+
+.details__title {
+  color: #143109;
+}
