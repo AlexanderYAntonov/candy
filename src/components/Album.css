@@ -1,4 +1,4 @@
-.heroButtons > .mainButton {
+.heroButtons .mainButton {
   display: none;
 }
 
@@ -15,7 +15,7 @@
     display: none;
   }
 
-  .heroButtons > .mainButton {
+  .heroButtons .mainButton {
     background-color: #143109;
     color: white;
     display: block;
