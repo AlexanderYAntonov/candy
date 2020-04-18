@@ -74,6 +74,7 @@ class Album extends React.Component {
                 </Button>
               </Link>
             </div>
+            <div className={'album__hero-title'}>Домашний кондитер</div>
           </div>
           <Container className={'cardGrid'} maxWidth="md">
             {/* End hero unit */}

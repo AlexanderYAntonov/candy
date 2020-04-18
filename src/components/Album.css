@@ -8,6 +8,17 @@
   padding: 8px 0px 6px;
   height: 25vh;
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-top: 56px;
+}
+
+.heroContent .album__hero-title {
+  font-family: Pacifico, Arial, Helvetica, sans-serif;
+  color: white;
+  text-shadow: 2px 2px 4px black;
+  font-size: 2rem;
 }
 
 @media screen and (min-device-width: 600px) {
@@ -37,6 +48,10 @@
   top: 2rem;
   display: flex;
   justify-content: flex-end;
+}
+
+.cardGrid .card * {
+  font-family: BellotaText, Arial, Helvetica, sans-serif;
 }
 
 .card .cardButton {
@@ -75,11 +90,12 @@
 .card .cardTitle {
   text-align: left;
   color: rgba(0, 0, 0, 0.87);
+  font-weight: 600;
 }
 
 .card .cardText {
   text-align: left;
-  color: rgba(0, 0, 0, 0.54);
+  color: rgba(0, 0, 0, 0.72);
   font-size: 0.83rem;
   white-space: nowrap;
   text-overflow: ellipsis;

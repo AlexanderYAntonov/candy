@@ -11,9 +11,7 @@ export class Details extends React.Component {
   render() {
     const { data } = this.props;
     if (data) {
-      const { id, title, fullDescription, imgSrc } = data ? data : {};
-      console.log(id);
-      console.log(imgSrc);
+      const { title, fullDescription, imgSrc } = data ? data : {};
 
       const prefix = '/candy/assets/images/';
       return (
@@ -25,26 +23,33 @@ export class Details extends React.Component {
                 image={prefix + imgSrc}
                 title={title}
               />
-              <CardContent className={'details__content'}>
-                <Typography
-                  gutterBottom
-                  variant="h6"
-                  component="h3"
-                  className={'details__title'}
-                >
-                  {title}
-                </Typography>
-                <Typography className={'details__description'}>
-                  {fullDescription}
-                </Typography>
-              </CardContent>
-              <CardActions className={'details__actions'}>
-                <Link to="/order">
-                  <Button size="small" className={'cardButton'}>
-                    Заказать
-                  </Button>
-                </Link>
-              </CardActions>
+              <div className={'details__text'}>
+                <CardContent className={'details__content'}>
+                  <Typography
+                    gutterBottom
+                    variant="h6"
+                    component="h3"
+                    className={'details__title'}
+                  >
+                    {title}
+                  </Typography>
+                  <Typography className={'details__description'}>
+                    {fullDescription}
+                  </Typography>
+                </CardContent>
+                <CardActions className={'details__actions'}>
+                  <Link to="/">
+                    <Button size="small" className={'details__card-btn'}>
+                      Назад
+                    </Button>
+                  </Link>
+                  <Link to="/order">
+                    <Button size="small" className={'details__card-btn'}>
+                      Заказать
+                    </Button>
+                  </Link>
+                </CardActions>
+              </div>
             </Card>
           </main>
 
