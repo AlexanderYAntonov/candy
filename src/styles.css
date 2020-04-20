@@ -1,0 +1,31 @@
+.icon-link {
+  display: flex;
+  align-items: center;
+}
+
+.hero-content {
+  background-image: url("/candy/assets/images/hero-image-small.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 8px 0px 6px;
+  height: 25vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-top: 56px;
+}
+
+.hero-content .hero-title {
+  font-family: Pacifico, Arial, Helvetica, sans-serif;
+  color: white;
+  text-shadow: 2px 2px 4px black;
+  font-size: 2rem;
+}
+
+@media screen and (min-device-width: 600px) {
+  .hero-content {
+    height: 30vh;
+    background-image: url("/candy/assets/images/hero-image-medium.jpg");
+  }
+}

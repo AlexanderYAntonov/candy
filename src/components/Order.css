@@ -1,3 +1,19 @@
 .order__main {
   padding-top: 56px;
 }
+
+.order__container {
+  font-size: 1rem;
+  text-align: left;
+  padding: 1em;
+}
+
+.hero-content.order__hero {
+  background-image: url("/candy/assets/images/order-hero-small.jpg");
+}
+
+@media screen and (min-device-width: 600px) {
+  .hero-content.order__hero {
+    background-image: url("/candy/assets/images/order-hero-medium.jpg");
+  }
+}

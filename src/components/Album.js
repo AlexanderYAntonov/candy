@@ -10,6 +10,7 @@ import Container from '@material-ui/core/Container';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import './Album.css';
+import '../styles.css';
 
 class Album extends React.Component {
   buildTemplate = () => {
@@ -22,7 +23,7 @@ class Album extends React.Component {
         xs={12}
         sm={12}
         md={6}
-        xl={3}
+        xl={4}
         className={'albumGrid'}
       >
         <Card className={'card'}>
@@ -66,7 +67,7 @@ class Album extends React.Component {
       <React.Fragment>
         <main>
           {/* Hero unit */}
-          <div className={'heroContent'}>
+          <div className={'hero-content'}>
             <div className={'heroButtons'}>
               <Link to="/order">
                 <Button variant="contained" className={'mainButton'}>
@@ -74,7 +75,7 @@ class Album extends React.Component {
                 </Button>
               </Link>
             </div>
-            <div className={'album__hero-title'}>Домашний кондитер</div>
+            <div className={'hero-title'}>Домашний кондитер</div>
           </div>
           <Container className={'cardGrid'} maxWidth="md">
             {/* End hero unit */}
