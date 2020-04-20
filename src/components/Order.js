@@ -10,7 +10,6 @@ export class Order extends React.Component {
     return (
       <React.Fragment>
         <main className={'order__main'}>
-          {/* Hero unit */}
           <div className={'hero-content order__hero'}>
             <div className={'hero-title'}>Как сделать заказ</div>
           </div>

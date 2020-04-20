@@ -66,7 +66,6 @@ class Album extends React.Component {
     return (
       <React.Fragment>
         <main>
-          {/* Hero unit */}
           <div className={'hero-content'}>
             <div className={'heroButtons'}>
               <Link to="/order">
@@ -75,10 +74,11 @@ class Album extends React.Component {
                 </Button>
               </Link>
             </div>
-            <div className={'hero-title'}>Домашний кондитер</div>
+            <div className={'hero-title'}>
+              Домашний кондитер - выпечка на заказ
+            </div>
           </div>
           <Container className={'cardGrid'} maxWidth="md">
-            {/* End hero unit */}
             <Grid container spacing={4}>
               {this.buildTemplate()}
             </Grid>

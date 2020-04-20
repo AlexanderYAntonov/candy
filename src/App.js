@@ -1,5 +1,4 @@
 import React from 'react';
-import './App.css';
 import { Album } from './components/Album';
 import Typography from '@material-ui/core/Typography';
 import Toolbar from '@material-ui/core/Toolbar';
@@ -9,14 +8,13 @@ import { Switch, Route } from 'react-router-dom';
 import { Details } from './components/Details';
 import { NotFound } from './components/NotFound';
 import { Order } from './components/Order';
+import './App.css';
+import './components/Album.css';
 
 function Copyright() {
   return (
     <Typography variant="body2" align="center">
       {'© Домашний кондитер '}
-      {/* <Link color="inherit" href="https://material-ui.com/">
-        
-      </Link>{' '} */}
       {new Date().getFullYear()}
       {'.'}
     </Typography>
@@ -67,10 +65,6 @@ class App extends React.Component {
         <div className={'switch'}>
           <Switch>
             <Route exact path="/" render={() => <Album list={list} />} />
-            {/* <Route
-              path="/details/:id"
-              render={(props) => <Details {...props} list={list} />}
-            /> */}
             <Route path="/details/:id" component={this.DetailsWrapper} />
             <Route path="/order" component={Order} />
             <Route component={NotFound} />

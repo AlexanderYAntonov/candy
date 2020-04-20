@@ -90,6 +90,12 @@
   background-color: #5d9e0e;
 }
 
+/* @media screen and (min-device-width: 600px) {
+  #appbar .toolbar {
+    display: none;
+  }
+} */
+
 .footer {
   background-color: #5d9e0e;
   color: rgba(255, 255, 255, 0.7);

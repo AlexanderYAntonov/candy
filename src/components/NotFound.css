@@ -1,0 +1,9 @@
+.hero-content.not-found__hero {
+  background-image: url("/candy/assets/images/not-found-small.jpg");
+}
+
+@media screen and (min-device-width: 600px) {
+  .hero-content.not-found__hero {
+    background-image: url("/candy/assets/images/not-found-medium.jpg");
+  }
+}

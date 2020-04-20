@@ -24,3 +24,9 @@ body a {
   display: flex;
   justify-content: center;
 }
+
+@media screen and(min-device-width: 600px) {
+  #appbar {
+    display: none;
+  }
+}
