@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/candy/static/css/main.1b6838b2.chunk.css",
-    "main.js": "/candy/static/js/main.b0754c77.chunk.js",
-    "main.js.map": "/candy/static/js/main.b0754c77.chunk.js.map",
+    "main.css": "/candy/static/css/main.aa3d9459.chunk.css",
+    "main.js": "/candy/static/js/main.5ab86e94.chunk.js",
+    "main.js.map": "/candy/static/js/main.5ab86e94.chunk.js.map",
     "runtime-main.js": "/candy/static/js/runtime-main.17a575d8.js",
     "runtime-main.js.map": "/candy/static/js/runtime-main.17a575d8.js.map",
     "static/js/2.46a9f4c8.chunk.js": "/candy/static/js/2.46a9f4c8.chunk.js",
     "static/js/2.46a9f4c8.chunk.js.map": "/candy/static/js/2.46a9f4c8.chunk.js.map",
     "index.html": "/candy/index.html",
-    "precache-manifest.748fdfa64029ba7c10ae9d9a9d7f5b81.js": "/candy/precache-manifest.748fdfa64029ba7c10ae9d9a9d7f5b81.js",
+    "precache-manifest.e69e1fb3cf9bf15a3a491bd85aa917ff.js": "/candy/precache-manifest.e69e1fb3cf9bf15a3a491bd85aa917ff.js",
     "service-worker.js": "/candy/service-worker.js",
-    "static/css/main.1b6838b2.chunk.css.map": "/candy/static/css/main.1b6838b2.chunk.css.map",
+    "static/css/main.aa3d9459.chunk.css.map": "/candy/static/css/main.aa3d9459.chunk.css.map",
     "static/js/2.46a9f4c8.chunk.js.LICENSE.txt": "/candy/static/js/2.46a9f4c8.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.17a575d8.js",
     "static/js/2.46a9f4c8.chunk.js",
-    "static/css/main.1b6838b2.chunk.css",
-    "static/js/main.b0754c77.chunk.js"
+    "static/css/main.aa3d9459.chunk.css",
+    "static/js/main.5ab86e94.chunk.js"
   ]
 }
