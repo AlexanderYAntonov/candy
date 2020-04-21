@@ -13,8 +13,8 @@ export class NotFound extends React.Component {
           <div className={'hero-content not-found__hero'}>
             <div className={'hero-title'}>404</div>
           </div>
-          <Container maxWidth="md" className={'order__container'}>
-            <h1>Упс, страница не нашлась</h1>
+          <Container maxWidth="md" className={'not-found__container'}>
+            <h3>Упс, страница не нашлась...</h3>
             <Link to="/" className="icon-link">
               <KeyboardBackspaceIcon className={'icon'} />Вернуться к выбору
               тортика

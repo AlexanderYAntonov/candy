@@ -46,7 +46,9 @@ class App extends React.Component {
     const { list } = this.state;
     const data = list.filter((item) => item.id === id);
 
-    return <Details data={data[0]} key={id} />;
+    const result =
+      data.length > 0 ? <Details data={data[0]} key={id} /> : <NotFound />;
+    return result;
   };
 
   render() {
