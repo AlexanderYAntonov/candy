@@ -51,8 +51,26 @@ class App extends React.Component {
     return result;
   };
 
+  RouterTemplate = (list, isLoading) => {
+    const template = (
+      <div className={'switch'}>
+        <Switch>
+          <Route
+            exact
+            path="/"
+            render={() => <Album list={list} isLoading={isLoading} />}
+          />
+          <Route path="/details/:id" component={this.DetailsWrapper} />
+          <Route path="/order" component={Order} />
+          <Route component={NotFound} />
+        </Switch>
+      </div>
+    );
+    return template;
+  };
+
   render() {
-    const { list } = this.state;
+    const { list, isLoading } = this.state;
     return (
       <div className="App">
         <AppBar position="fixed" id={'appbar'}>
@@ -64,14 +82,7 @@ class App extends React.Component {
           </Toolbar>
         </AppBar>
 
-        <div className={'switch'}>
-          <Switch>
-            <Route exact path="/" render={() => <Album list={list} />} />
-            <Route path="/details/:id" component={this.DetailsWrapper} />
-            <Route path="/order" component={Order} />
-            <Route component={NotFound} />
-          </Switch>
-        </div>
+        {this.RouterTemplate(list, isLoading)}
 
         <footer className={'footer'}>
           <Typography

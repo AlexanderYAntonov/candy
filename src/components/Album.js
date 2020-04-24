@@ -13,6 +13,19 @@ import './Album.css';
 import '../styles.css';
 
 class Album extends React.Component {
+  Preloader = () => {
+    return (
+      <div className={'lds-container'}>
+        <div className={'lds-ellipsis'}>
+          <div />
+          <div />
+          <div />
+          <div />
+        </div>
+      </div>
+    );
+  };
+
   buildTemplate = () => {
     const { list } = this.props;
     const prefix = '/candy/assets/images/';
@@ -63,6 +76,7 @@ class Album extends React.Component {
   };
 
   render() {
+    const { isLoading } = this.props;
     return (
       <React.Fragment>
         <main>
@@ -80,7 +94,7 @@ class Album extends React.Component {
           </div>
           <Container className={'cardGrid'} maxWidth="md">
             <Grid container spacing={4}>
-              {this.buildTemplate()}
+              {isLoading ? this.Preloader() : this.buildTemplate()}
             </Grid>
           </Container>
         </main>
@@ -90,7 +104,8 @@ class Album extends React.Component {
 }
 
 Album.propTypes = {
-  list: PropTypes.array.isRequired
+  list: PropTypes.array.isRequired,
+  isLoading: PropTypes.bool.isRequired
 };
 
 export { Album };

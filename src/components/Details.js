@@ -52,21 +52,6 @@ export class Details extends React.Component {
               </div>
             </Card>
           </main>
-
-          {/* <main className={'details__container'}>
-            <CardMedia
-              className={'cardMedia'}
-              image={prefix + imgSrc}
-              title={title}
-            />
-            <div>
-              <h1>{title}</h1>
-              <p>{fullDescription}</p>
-
-              <pre>{JSON.stringify(data)}</pre>
-              <Link to="/">Вернуться к выбору тортика</Link>
-            </div>
-          </main> */}
         </React.Fragment>
       );
     } else {
