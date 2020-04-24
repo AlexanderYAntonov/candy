@@ -17,7 +17,9 @@ export class Details extends React.Component {
       return (
         <React.Fragment>
           <main className={'details__container'}>
-            <Card className={'details__card'}>
+            <Card
+              className={'details__card shadow-drop-2-center scale-up-center'}
+            >
               <CardMedia
                 className={'details__image'}
                 image={prefix + imgSrc}
