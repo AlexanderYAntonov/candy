@@ -1,3 +1,5 @@
+@import '../Variables.scss';
+
 .heroButtons .mainButton {
   display: none;
 }
@@ -8,14 +10,14 @@
   }
 
   .heroButtons .mainButton {
-    background-color: #143109;
+    background-color: $dark-green;
     color: white;
     display: block;
   }
 }
 
 .heroButtons > .mainButton:hover {
-  background-color: #5d9e0e;
+  background-color: $light-green;
 }
 
 .heroButtons {
@@ -72,7 +74,7 @@
 
 .card .cardText {
   text-align: left;
-  color: rgba(0, 0, 0, 0.72);
+  color: $card-text-color;
   font-size: 0.83rem;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -87,7 +89,7 @@
   padding: 6px;
 }
 .toolbar {
-  background-color: #5d9e0e;
+  background-color: $light-green;
 }
 
 /* @media screen and (min-device-width: 600px) {
@@ -97,8 +99,8 @@
 } */
 
 .footer {
-  background-color: #5d9e0e;
-  color: rgba(255, 255, 255, 0.7);
+  background-color: $light-green;
+  color: $footer-text-color;
 }
 
 .icon {

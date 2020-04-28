@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import KeyboardBackspaceIcon from '@material-ui/icons/KeyboardBackspace';
 import Container from '@material-ui/core/Container';
 import './NotFound.css';
-import '../styles.css';
+import '../styles.scss';
 
 export class NotFound extends React.Component {
   render() {

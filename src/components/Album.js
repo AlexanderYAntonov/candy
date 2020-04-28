@@ -9,8 +9,8 @@ import Typography from '@material-ui/core/Typography';
 import Container from '@material-ui/core/Container';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
-import './Album.css';
-import '../styles.css';
+import './Album.scss';
+import '../styles.scss';
 
 class Album extends React.Component {
   Preloader = () => {

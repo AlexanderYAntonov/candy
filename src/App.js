@@ -8,8 +8,8 @@ import { Switch, Route } from 'react-router-dom';
 import { Details } from './components/Details';
 import { NotFound } from './components/NotFound';
 import { Order } from './components/Order';
-import './App.css';
-import './components/Album.css';
+import './App.scss';
+import './components/Album.scss';
 
 function Copyright() {
   return (

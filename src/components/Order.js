@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import Container from '@material-ui/core/Container';
 import KeyboardBackspaceIcon from '@material-ui/icons/KeyboardBackspace';
 import './Order.css';
-import '../styles.css';
+import '../styles.scss';
 
 export class Order extends React.Component {
   render() {

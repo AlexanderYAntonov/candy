@@ -1,12 +1,14 @@
+@import './Variables.scss';
+
 body {
-  background-color: rgba(250, 201, 184, 0.3);
+  background-color: $body-background;
   font-size: 16px;
   font-family: BellotaText, Arial, Helvetica, sans-serif;
 }
 
 body a {
   text-decoration: none;
-  color: #fa198b;
+  color: $bright-red;
 }
 
 .App {
